@@ -1,5 +1,5 @@
 {
-  "name": "pine",
+  "name": "Pine",
   "version": "1.0.0",
   "main": "api/proxy.js",
   "dependencies": {
