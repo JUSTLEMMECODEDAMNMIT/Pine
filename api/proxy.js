@@ -1,14 +1,13 @@
-// api/proxy.js
 const fetch = require('node-fetch');
 
 export default async function handler(req, res) {
-    const url = req.query.url;
-    if (!url) {
+    const targetUrl = req.query.url;
+    if (!targetUrl) {
         return res.status(400).json({ error: 'URL parameter is required' });
     }
 
     try {
-        const response = await fetch(url, {
+        const response = await fetch(targetUrl, {
             method: req.method,
             headers: req.headers,
             body: req.method === 'POST' ? req.body : undefined
