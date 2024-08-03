@@ -1,7 +1,6 @@
 {
-  "name": "Pine",
+  "name": "pine",
   "version": "1.0.0",
-  "main": "api/proxy.js",
   "dependencies": {
     "node-fetch": "^3.0.0"
   }
