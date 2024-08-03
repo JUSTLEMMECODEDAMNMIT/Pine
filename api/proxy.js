@@ -2,7 +2,7 @@
 const fetch = require('node-fetch');
 
 export default async function handler(req, res) {
-    const url = req.query.url; // Assume the URL to proxy is passed as a query parameter
+    const url = req.query.url; // Get the URL from the query parameter
     if (!url) {
         return res.status(400).json({ error: 'URL parameter is required' });
     }
